@@ -1,0 +1,103 @@
+*{ margin: 0; padding: 0;}
+
+
+ul{list-style: none;}
+html,body{ height: 100%;}
+body{ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 139, 158);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/background-image.png) center center no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.header{
+   
+    .logo{
+        position: absolute;
+        left: 395px;
+        width: 124px; height: 81px; margin-right: 50px;}
+    .company_name{
+        position: absolute;
+        left: 600px;
+        top: 20px;
+        text-align: right;
+        letter-spacing: 2px;
+        h1{ margin-bottom: 10px;}
+    }
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left:0;
+    z-index: 1;
+}
+
+.container{
+    width: 1428px; height: 966px;
+    background:url(../images/stage.png) center center no-repeat;
+    position: relative;
+   
+}
+
+.main{
+  
+    width: 714px;
+    height: 400px;
+    position: absolute;
+    left: 324px;
+    top: 390px;
+    img{border-radius: 3px;}
+    
+}
+
+.aside_l{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    .slider{
+        width: 170px;
+        height: 170px;
+        overflow: hidden;
+        text-align: center;
+        img{
+            display: inline-block;
+            height: 100%;
+            width: auto;
+            transform: translate(-25%);
+        }
+    }
+}
+.aside_r{
+    position: absolute;
+    right:50px;
+    top: 400px;
+    width:274px ;
+    height: 353px;
+    background: url(../images/acr-image.png) center center no-repeat;
+    background-size: contain;
+    
+    .sign{}
+    ul{padding: 30px; }
+    li{ line-height: 1.6;
+        em._icon{ display: block; width: 57px; height: 21px;
+            &.email{ background: url(../images/email.png);}
+            &.tel{ background: url(../images/tel.png);}
+            &.fax{ background: url(../images/fax.png);}
+            &.add{ background: url(../images/add.png);}
+        }
+    }
+}
+.footer{}
